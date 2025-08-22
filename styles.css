@@ -1,0 +1,270 @@
+/*** You will not need this file until Unit 3 ***/
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: rgb(253, 202, 211);
+    color:rgb(52, 8, 15);
+    text-align:center;
+    font-family:"Trirong";
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+h1{
+    font-family: "Sofia", sans-serif;
+    color: #330000;
+    padding: 20px;
+}
+
+.image {
+    height: 300px;
+    width: 250px;
+    text-align:justify;
+}
+.navbar ul {
+    z-index: 1000;
+    overflow:hidden;
+    top:0%;
+    width:100%;
+    text-align:center;
+    position: sticky;
+    background-color: rgba(255, 200, 208, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+    z-index: 1000;
+    padding: 10px 0;
+    /* Ensures the navbar is on top of other elements */
+}
+
+.navbar ul li {
+    margin: 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color:rgb(52, 8, 15);
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    color:lightpink;
+    background-color: ivory;
+    border-radius: 20px;
+}
+
+.navbar ul li .nav-link {
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 15px;
+    color:rgb(52, 8, 15);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    border-radius: 30px;
+}
+
+.navbar ul li .nav-link:hover {
+    color: rgb(52, 8, 15);
+    background-color: ivory;
+}
+#header-container{
+    display: flex;
+    flex-direction:column;
+    background-color:ivory;
+    text-align:center;
+    font-size: x-large;
+    border-radius: 40px;
+}
+
+button{
+    font-family: "Sofia", sans-serif;
+    background-color:rgb(246, 202, 209);
+    font-size: medium;
+    padding:12px;
+    border-radius:50px;
+    cursor:pointer; 
+    text-align: center;
+}
+
+button:hover {
+    color:ivory;
+    cursor:pointer;
+}
+
+
+
+
+.intro {
+    padding: 20px 40px; /* Adjusted left and right padding to be the same */
+    margin: 40px auto;
+    max-width: 80%;
+    background-color: ivory;
+    color: rgb(52, 8, 15);
+    border-radius: 50px;
+    font-family: "Sofia", sans-serif;
+    font-size: 1.6rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+#days{
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 0; 
+}
+p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.intro:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+li{
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+    font-size:larger;
+}
+
+h3{
+    font-family: "Sofia", sans-serif;  
+}
+
+.event{
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+.block{
+    color:ivory;
+    font-style: italic;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.block:hover{
+    color:rgb(52, 8, 15);
+}
+
+/*** Dark Mode ***/
+#themebutton {
+padding: 10px 15px;
+color: white;
+background: none;
+border: none;
+font: inherit;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+
+.dark-mode {
+    background-color:rgb(52, 8, 15);
+    color: ivory;
+}
+
+.dark-mode h1 {
+    color:lightpink;
+}
+
+.dark-mode a:visited * {
+color:lightpink;
+}
+
+.dark-mode .navbar {
+    color:ivory;
+}
+
+.dark-mode .navbar ul{
+    background-color: rgba(71, 4, 4, 0.978);
+    box-shadow: 0 2px 8px rgb(57, 18, 18); /* soft shadow */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dark-mode .navbar ul li a {
+    color: ivory;
+}
+
+.dark-mode .navbar ul li a:hover {
+    color:rgb(52, 8, 15);
+    background-color: lightpink;
+    border-radius: 20px;
+}
+
+.dark-mode .navbar ul li .nav-link {
+    color:ivory;
+}
+
+.dark-mode .navbar ul li .nav-link:hover {
+    color:ivory;
+    background-color: lightpink;
+}
+
+.dark-mode .block:hover {
+    color:ivory;
+}
+
+/*** RSVP Section ***/
+
+.rsvp-container {
+ display:flex;
+ flex-direction: row;
+ gap:10px;
+ width:100%;
+ padding-bottom:50px;
+ font-size: large;
+}
+
+.rsvp-para{
+    margin-left:40px;
+    width:55%;
+    padding-right:10px;
+}
+
+.rsvp-participants{
+    width:45%;
+    padding-right:10px;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background-color: #f8d7da;  /* Light red background */
+
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ivory;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+  }
+  
+  .modal-container {
+    padding: 50px;
+    width: 55%;
+    background-color:rgb(52, 8, 15);
+    color: ivory;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Sofia", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
